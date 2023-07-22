@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:login_pages_ui/login_1/widget/text.dart';
+import 'package:login_pages_ui/widget/text.dart';
 
 class login_1_screen extends StatefulWidget {
   const login_1_screen({Key? key}) : super(key: key);
@@ -104,36 +104,36 @@ class _login_1_screenState extends State<login_1_screen> {
                                    ),
 
 
-                                   Padding(
-                                     padding: EdgeInsets.symmetric(
-                                       horizontal: 25.w,
-                                       vertical: 25.h,
-                                     ),
-                                     child: TextField(
-                                       decoration: InputDecoration(
-                                         border: OutlineInputBorder(
-                                           borderRadius: BorderRadius.all(Radius.circular(20.spMin)),
-                                         ),
-                                         hintText: "Password",
-                                         focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(color: Colors.black),
-                                           borderRadius: BorderRadius.all(Radius.circular(20.spMin)),
-                                         ),
-                                         suffixIcon: IconButton(
-                                           onPressed: (){
-                                             setState(() {
-                                             show = !show;
-                                           }); },
-                                           icon: Icon(
-                                             show == true ? Icons.remove_red_eye_rounded :
-                                              Icons.security_sharp,
-                                             color: Colors.black,
+                                     Padding(
+                                       padding: EdgeInsets.symmetric(
+                                         horizontal: 25.w,
+                                         vertical: 25.h,
+                                       ),
+                                       child: TextField(
+                                         decoration: InputDecoration(
+                                           border: OutlineInputBorder(
+                                             borderRadius: BorderRadius.all(Radius.circular(20.spMin)),
+                                           ),
+                                           hintText: "Password",
+                                           focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(color: Colors.black),
+                                             borderRadius: BorderRadius.all(Radius.circular(20.spMin)),
+                                           ),
+                                           suffixIcon: IconButton(
+                                             onPressed: (){
+                                               setState(() {
+                                               show = !show;
+                                             }); },
+                                             icon: Icon(
+                                               show == true ? Icons.remove_red_eye_rounded :
+                                                Icons.security_sharp,
+                                               color: Colors.black,
+                                             ),
                                            ),
                                          ),
+                                         cursorColor: Colors.black,
                                        ),
-                                       cursorColor: Colors.black,
                                      ),
-                                   ),
 
                                    //forget password button
                                    TextButton(
@@ -165,7 +165,7 @@ class _login_1_screenState extends State<login_1_screen> {
                                        )
                                    ),
                                    
-                                   SizedBox(height: 50.h,),
+                                   SizedBox(height: widthsize ? 50.h : 40.0),
 
                                    //suggestion text
                                    cario_text(

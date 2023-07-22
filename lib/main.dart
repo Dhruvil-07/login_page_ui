@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:login_pages_ui/login_1/screens/login_1_screen.dart';
-import 'package:login_pages_ui/login_1/theme/theme.dart';
+import 'package:login_pages_ui/login_2/screen/login_2_screen.dart';
+import 'package:login_pages_ui/theme/theme.dart';
+
 
 void main()
 {
@@ -26,8 +28,8 @@ class my_login_pages extends StatelessWidget {
        return MaterialApp(
           debugShowCheckedModeBanner: false,
           themeMode: ThemeMode.light,
-          theme: login1_light_theme(context),
-          home: login_1_screen(),
+          theme: login2_light_theme(context),
+          home: login_2_screen(),
         );
       },
     );

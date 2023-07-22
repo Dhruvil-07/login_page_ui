@@ -1,6 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+
+
+//FIRST LOGIN SCREEN THEME
+
+//first login screen light theme
 ThemeData login1_light_theme(BuildContext context)
 {
    return ThemeData().copyWith(
@@ -27,5 +32,16 @@ ThemeData login1_light_theme(BuildContext context)
        ),
      ),
 
+   );
+}
+
+
+//SECOND LOGIN SCREEN THEM
+
+//Second login screen light theme
+ThemeData login2_light_theme(BuildContext context)
+{
+   return ThemeData().copyWith(
+     brightness: Brightness.light,
    );
 }
