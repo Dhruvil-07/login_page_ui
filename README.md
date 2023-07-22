@@ -1,6 +1,17 @@
 # login_pages_ui
 
-A new Flutter project.
+Login Page Designs.
+
+Reusable widget concept used in this designs
+
+RESPONSIVE AND ADAPTIVE DESIGN
+(The Design change according to the size of the device and its orientation )
+
+Themes are also managed with in this designs
+
+In this Design , the color and anothers properties of the widget changes based on  the dark and light theme.
+
+This designs runs successfully on every devices (like android phone , android tabs , iphone , ipad  , web etc...).
 
 ## Getting Started
 
